@@ -1,35 +1,143 @@
 <!DOCTYPE html>
+<!-- doctype = this is a modern HTML page -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- charset = letters display correctly -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <!-- viewport = page fits phone screens properly -->
+  <title>Waqas Ali — Web Designer for Coffee Shops & Small Businesses</title>
+  <meta name="description" content="I build beautiful, fast websites for coffee shops and small businesses. Menu, prices, reviews and directions — everything your customers need, in one place.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="card">
-    <h1>Waqas Ali</h1>
-    <p>I am a software engineering student learning web development one project at a time.</p>
+  <!-- ===== Top bar / navigation ===== -->
+  <header class="topbar">
+    <a class="logo" href="#top">Waqas<span>Ali</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="#services">Services</a>
+      <a href="#work">My Work</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="https://ig.me/m/waqasali.webdesign" target="_blank" rel="noopener">Contact Me</a>
+    </nav>
   </header>
 
-  <section class="card">
-    <h2>What I am learning</h2>
-    <ul class="skills">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>javaScript</li>
-    </ul>
+  <!-- ===== Hero: the first thing a visitor sees ===== -->
+  <section class="hero" id="top">
+    <div class="hero-text reveal">
+      <p class="hero-badge">Web Designer — Coffee Shops & Small Businesses</p>
+      <h1>I build beautiful websites that bring you <em>more customers.</em></h1>
+      <p class="hero-sub">Your customers search for you on their phones. If they find a slow, old website — or no website at all — they go to the shop next door. I fix that, with a fast website that shows your menu, prices, reviews and directions in one tap.</p>
+      <div class="hero-btns">
+        <a class="btn btn-main" href="#work">See My Work</a>
+        <a class="btn btn-ghost" href="https://ig.me/m/waqasali.webdesign" target="_blank" rel="noopener">Get a Free Sample</a>
+      </div>
+      <div class="hero-points">
+        <span>✓ Mobile-first design</span>
+        <span>✓ Ready in days, not weeks</span>
+        <span>✓ Honest, fixed pricing</span>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <img src="waqas.jpg" alt="Waqas Ali, web designer, at his desk">
+      <div class="photo-card">
+        <strong>Waqas Ali</strong>
+        <small>Web Designer</small>
+      </div>
+    </div>
   </section>
 
-  <section class="card">
-    <h2>My projects</h2>
-    <ul class="projects">
-      <li><a href="#">My portfolio website - the site you are looking at now.</a></li>
-      <li><a href="#">Glass FX Studio - the app I use to make 4k videos for Adobe stock.</a></li>
-      <li><a href="#">To-Do App - coming soon my first javascript project.</a></li>
-    </ul>
+  <!-- ===== Services: what a client can buy ===== -->
+  <section class="section" id="services">
+    <p class="kicker reveal">Services</p>
+    <h2 class="reveal">What I can build for your business</h2>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card-icon">🌐</div>
+        <h3>Business Website</h3>
+        <p>A complete, modern website for your shop — home, about, gallery and contact — designed to look great on phones, where your customers actually are.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon">📋</div>
+        <h3>Menu & Prices Page</h3>
+        <p>Your full menu with photos and prices, easy to read on a phone. No more customers calling just to ask "what do you have, and how much is it?"</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon">📍</div>
+        <h3>Google Maps Setup</h3>
+        <p>Your shop set up properly on Google Maps and Google Search, with your best reviews on show — so nearby customers find you first.</p>
+      </article>
+    </div>
   </section>
 
+  <!-- ===== Work: proof, not promises ===== -->
+  <section class="section section-alt" id="work">
+    <p class="kicker reveal">My Work</p>
+    <h2 class="reveal">Real projects, live on the internet</h2>
+
+    <article class="work-feature reveal">
+      <div class="work-feature-text">
+        <p class="work-tag">Sample Project — Coffee Shop Website</p>
+        <h3>Maple &amp; Bean Coffee Co.</h3>
+        <p>A complete demo website for a coffee shop: full menu with prices and photos, customer reviews, opening hours, a happy-hour offer and one-tap call &amp; directions buttons. This is exactly the kind of website I can build for your shop — with your name, your menu and your photos.</p>
+        <a class="btn btn-main" href="https://waqas307-tech.github.io/maple-bean-demo/" target="_blank" rel="noopener">View Live Website</a>
+      </div>
+      <ul class="work-list">
+        <li>Menu with photos &amp; prices</li>
+        <li>Reviews &amp; star ratings</li>
+        <li>Opening hours, highlighted for today</li>
+        <li>One-tap call &amp; directions</li>
+        <li>Special offers section</li>
+      </ul>
+    </article>
+
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card-icon">🎬</div>
+        <h3>Glass FX Studio</h3>
+        <p>My own app for creating 4K videos and designs, which I sell on Adobe Stock. Designed and built by me — proof I can handle bigger, more complex projects too.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon">✅</div>
+        <h3>To-Do App</h3>
+        <p>A small task app built with JavaScript — add, complete and manage daily tasks. A learning project that sharpened the skills I use on client websites.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon">💼</div>
+        <h3>This Portfolio</h3>
+        <p>The site you are reading right now — designed and coded by me, mobile-friendly and fast. Your website will get the same care.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== About: honest and short ===== -->
+  <section class="section" id="about">
+    <p class="kicker reveal">About Me</p>
+    <h2 class="reveal">A designer who answers his own messages</h2>
+    <p class="about-text reveal">I'm Waqas Ali, a software engineering student and web designer. I build every website myself — no agency, no middleman — so when you message me, you talk to the person who actually does the work. I keep things simple: clear pricing agreed before we start, a sample you can see before you pay in full, and a website your customers will love to use.</p>
+    <div class="skills reveal">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Website Design</span><span>Google Maps for Business</span>
+    </div>
+  </section>
+
+  <!-- ===== Contact: one clear action ===== -->
+  <section class="contact reveal" id="contact">
+    <h2>Want a website like this for your shop?</h2>
+    <p>Message me on Instagram and I will make you a <strong>free sample homepage</strong> for your business — see it first, then decide. No pressure, no obligation.</p>
+    <a class="btn btn-light" href="https://ig.me/m/waqasali.webdesign" target="_blank" rel="noopener">Message Me on Instagram</a>
+    <p class="contact-handle">@waqasali.webdesign</p>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Waqas Ali — Web Designer. Built by hand, with care.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- script = the small JavaScript file for the menu and animations -->
 </body>
 </html>
