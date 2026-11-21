@@ -112,7 +112,9 @@ h1, h2, h3, .logo { font-family: 'Outfit', Arial, sans-serif; }
   background: var(--card); border-radius: var(--radius); padding: 28px;
   box-shadow: 0 8px 24px rgba(11, 30, 63, 0.08);
 }
-.card-icon { font-size: 34px; margin-bottom: 12px; }
+.card-icon { margin-bottom: 14px; color: var(--blue); }
+/* the icons are simple line drawings (SVG), drawn in the blue brand colour */
+.card-icon svg { display: block; width: 34px; height: 34px; }
 .card h3 { font-size: 20px; margin-bottom: 8px; }
 .card p { color: var(--muted); font-size: 15px; }
 
