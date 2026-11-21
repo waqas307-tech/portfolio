@@ -1,12 +1,95 @@
+/* Waqas's portfolio — Prompt 1: new look, same words.
+   Clean and professional, white and blue.
+   Every section sits in its own white card with a soft shadow.
+   It also looks good on a phone. */
+
 body {
-    font-family: Arial,sans-serif;
-    background-color: #6eb7ff;
-    color: #222222;
-    padding: 40px;
-    max-width: 700px;
-    margin: 0 auto;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #e8f1fb;
+  color: #1f2937;
+  padding: 40px 16px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* One white card per section */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(30, 64, 175, 0.10);
+  padding: 28px;
+  margin-bottom: 24px;
 }
 
 h1 {
-  color: #2c5f8a;
+  color: #1e40af;
+  font-size: 40px;
+  margin: 0 0 8px 0;
+}
+
+header p {
+  color: #475569;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h2 {
+  color: #2563eb;
+  font-size: 24px;
+  margin: 0 0 16px 0;
+}
+
+/* Skills as small blue pills */
+.skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background-color: #dbeafe;
+  color: #1e40af;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+/* Projects list */
+.projects {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.projects li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.projects a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
 }
